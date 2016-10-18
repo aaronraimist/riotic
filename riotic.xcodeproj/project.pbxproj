@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D23F5BC21DB3C2E5009CAD61 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */; };
+		D23F5BC41DB3CD92009CAD61 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = D23F5BC31DB3CD92009CAD61 /* Preferences.plist */; };
+		D23F5BC81DB6639D009CAD61 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */; };
+		D23F5BCA1DB686D6009CAD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F5BC91DB686D6009CAD61 /* ViewController.swift */; };
+		D2C950BB1DAEE8BE0009B958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C950BA1DAEE8BE0009B958 /* AppDelegate.swift */; };
+		D2C950BD1DAEE8BE0009B958 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C950BC1DAEE8BE0009B958 /* Preferences.swift */; };
+		D2C950BF1DAEE8BE0009B958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C950BE1DAEE8BE0009B958 /* Assets.xcassets */; };
+		D2C950C21DAEE8BF0009B958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C950C01DAEE8BF0009B958 /* Main.storyboard */; };
+		D2C950CB1DAEE97F0009B958 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C950CA1DAEE97F0009B958 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		D23F5BC31DB3CD92009CAD61 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
+		D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesStorage.swift; sourceTree = "<group>"; };
+		D23F5BC91DB686D6009CAD61 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2C950B71DAEE8BE0009B958 /* riotic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riotic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C950BA1DAEE8BE0009B958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2C950BC1DAEE8BE0009B958 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		D2C950BE1DAEE8BE0009B958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2C950C11DAEE8BF0009B958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2C950C31DAEE8BF0009B958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C950CA1DAEE97F0009B958 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2C950B41DAEE8BE0009B958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C950CB1DAEE97F0009B958 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2C950AE1DAEE8BE0009B958 = {
+			isa = PBXGroup;
+			children = (
+				D2C950B91DAEE8BE0009B958 /* riotic */,
+				D2C950B81DAEE8BE0009B958 /* Products */,
+				D2C950C91DAEE97F0009B958 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2C950B81DAEE8BE0009B958 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2C950B71DAEE8BE0009B958 /* riotic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2C950B91DAEE8BE0009B958 /* riotic */ = {
+			isa = PBXGroup;
+			children = (
+				D23F5BC91DB686D6009CAD61 /* ViewController.swift */,
+				D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */,
+				D2C950BA1DAEE8BE0009B958 /* AppDelegate.swift */,
+				D2C950BC1DAEE8BE0009B958 /* Preferences.swift */,
+				D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */,
+				D2C950BE1DAEE8BE0009B958 /* Assets.xcassets */,
+				D2C950C01DAEE8BF0009B958 /* Main.storyboard */,
+				D2C950C31DAEE8BF0009B958 /* Info.plist */,
+				D23F5BC31DB3CD92009CAD61 /* Preferences.plist */,
+			);
+			path = riotic;
+			sourceTree = "<group>";
+		};
+		D2C950C91DAEE97F0009B958 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C950CA1DAEE97F0009B958 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2C950B61DAEE8BE0009B958 /* riotic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C950C61DAEE8BF0009B958 /* Build configuration list for PBXNativeTarget "riotic" */;
+			buildPhases = (
+				D2C950B31DAEE8BE0009B958 /* Sources */,
+				D2C950B41DAEE8BE0009B958 /* Frameworks */,
+				D2C950B51DAEE8BE0009B958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = riotic;
+			productName = "riotic";
+			productReference = D2C950B71DAEE8BE0009B958 /* riotic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2C950AF1DAEE8BE0009B958 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Digistrada S.L.";
+				TargetAttributes = {
+					D2C950B61DAEE8BE0009B958 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4GP59B67X4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2C950B21DAEE8BE0009B958 /* Build configuration list for PBXProject "riotic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2C950AE1DAEE8BE0009B958;
+			productRefGroup = D2C950B81DAEE8BE0009B958 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2C950B61DAEE8BE0009B958 /* riotic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2C950B51DAEE8BE0009B958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C950BF1DAEE8BE0009B958 /* Assets.xcassets in Resources */,
+				D23F5BC41DB3CD92009CAD61 /* Preferences.plist in Resources */,
+				D23F5BC21DB3C2E5009CAD61 /* Preferences.xib in Resources */,
+				D2C950C21DAEE8BF0009B958 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2C950B31DAEE8BE0009B958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C950BD1DAEE8BE0009B958 /* Preferences.swift in Sources */,
+				D2C950BB1DAEE8BE0009B958 /* AppDelegate.swift in Sources */,
+				D23F5BCA1DB686D6009CAD61 /* ViewController.swift in Sources */,
+				D23F5BC81DB6639D009CAD61 /* PreferencesStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2C950C01DAEE8BF0009B958 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C950C11DAEE8BF0009B958 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2C950C41DAEE8BF0009B958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2C950C51DAEE8BF0009B958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D2C950C71DAEE8BF0009B958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4GP59B67X4;
+				INFOPLIST_FILE = riotic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digistrada.riotic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2C950C81DAEE8BF0009B958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4GP59B67X4;
+				INFOPLIST_FILE = riotic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digistrada.riotic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2C950B21DAEE8BE0009B958 /* Build configuration list for PBXProject "riotic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C950C41DAEE8BF0009B958 /* Debug */,
+				D2C950C51DAEE8BF0009B958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C950C61DAEE8BF0009B958 /* Build configuration list for PBXNativeTarget "riotic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C950C71DAEE8BF0009B958 /* Debug */,
+				D2C950C81DAEE8BF0009B958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2C950AF1DAEE8BE0009B958 /* Project object */;
+}
