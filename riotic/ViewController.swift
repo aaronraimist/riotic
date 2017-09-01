@@ -38,11 +38,16 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
     }
     
     private func loadClient() {
-        let url = URL(string: (settings?.get(key: "riotClientUrl"))!)
+        let urlRawSetting = settings?.get(key: "riotClientUrl")
+        let url = URL(string: urlRawSetting!)
         
-        print("Opening riot client at \(url)")
-        let request = NSURLRequest(url:url! as URL)
-        webView.load(request as URLRequest)
+        if (url != nil) {
+            let request = NSURLRequest(url:url as! URL)
+            print("Showing web view2 from url \(url)")
+            webView.load(request as URLRequest)
+        } else {
+            print("INVALID URL! - \(urlRawSetting)")
+        }
     }
     
     private func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: ((WKNavigationActionPolicy) -> Void)) {
