@@ -55,6 +55,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3DBFE9C1222116BB00EFB1F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2C950C01DAEE8BF0009B958 /* Main.storyboard */,
+				D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D2C950AE1DAEE8BE0009B958 = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				D2C950BA1DAEE8BE0009B958 /* AppDelegate.swift */,
-				D23F5BC91DB686D6009CAD61 /* ViewController.swift */,
 				D2C950BC1DAEE8BE0009B958 /* Preferences.swift */,
 				D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */,
+				D23F5BC91DB686D6009CAD61 /* ViewController.swift */,
+				3DBFE9C1222116BB00EFB1F3 /* Views */,
 				3DBFE97E2220FFB500EFB1F3 /* Extensions */,
-				D2C950C01DAEE8BF0009B958 /* Main.storyboard */,
-				D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */,
 				D2C950BE1DAEE8BE0009B958 /* Assets.xcassets */,
 				D2C950C31DAEE8BF0009B958 /* Info.plist */,
 				D23F5BC31DB3CD92009CAD61 /* Preferences.plist */,

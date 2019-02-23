@@ -10,25 +10,19 @@ import Cocoa
 import WebKit
 
 class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, PreferencesStorageDelegate {
-    var webView: WKWebView
     var settings: PreferencesStorage?
     
-    override func viewDidLoad() {
+	@IBOutlet weak var webView: WKWebView!
+
+	override func viewDidLoad() {
         super.viewDidLoad()
         
         settings = PreferencesStorage.sharedInstance
 
-        view.addSubview(webView)
-        
-        webView.translatesAutoresizingMaskIntoConstraints = false
-        let height = NSLayoutConstraint(item: webView, attribute: .height, relatedBy: .equal, toItem: view, attribute: .height, multiplier: 1, constant: 0)
-        let width = NSLayoutConstraint(item: webView, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1, constant: 0)
-        view.addConstraints([height, width])
-        
-        self.webView.navigationDelegate = self
-        self.webView.uiDelegate = self
-        settings?.delegate = self
-        
+		self.webView.navigationDelegate = self
+		self.webView.uiDelegate = self
+		settings?.delegate = self
+
         self.loadClient()
     }
 
@@ -94,9 +88,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
         
         if (host != nil && host!.hasPrefix((riotUrl?.host)!)) {
             decisionHandler(.allow)
-        }
-        else
-        {
+        } else {
             if (navigationAction.navigationType == WKNavigationType.linkActivated) {
                 let url = navigationAction.request.url!
                 NSWorkspace.shared.open(url)
@@ -114,10 +106,5 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
         // Update the view, if already loaded.
         }
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        self.webView = WKWebView(frame: CGRect.zero)
-        super.init(coder: aDecoder)
-    }
+	
 }
-
