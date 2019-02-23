@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DBFE97D2220EBFA00EFB1F3 /* riotic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = riotic.entitlements; sourceTree = "<group>"; };
 		D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		D23F5BC31DB3CD92009CAD61 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 		D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesStorage.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		D2C950B91DAEE8BE0009B958 /* riotic */ = {
 			isa = PBXGroup;
 			children = (
+				3DBFE97D2220EBFA00EFB1F3 /* riotic.entitlements */,
 				D23F5BC91DB686D6009CAD61 /* ViewController.swift */,
 				D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */,
 				D2C950BA1DAEE8BE0009B958 /* AppDelegate.swift */,
@@ -119,6 +121,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VLEL2Z9Y59;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,9 +281,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = riotic/riotic.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VLEL2Z9Y59;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = riotic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ist.raim.riotic;
@@ -289,9 +298,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = riotic/riotic.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VLEL2Z9Y59;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = riotic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ist.raim.riotic;
