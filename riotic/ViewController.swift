@@ -65,7 +65,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
     
     func webView(_ webView: WKWebView, runOpenPanelWith openPanelParameters: WKOpenPanelParameters, initiatedByFrame: WKFrameInfo, completionHandler: @escaping ([URL]?) -> Void) {
         let openDialog = NSOpenPanel()
-        if (openDialog.runModal() == NSModalResponseOK) {
+        if (openDialog.runModal() == NSApplication.ModalResponse.OK) {
             completionHandler([(openDialog.url)!])
         } else {
             print("File Dialog Cancelled!")
@@ -75,7 +75,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
     
     func webView(_ webView: WKWebView, runOpenPanelForFileButtonWith resultListener: WebOpenPanelResultListener!, allowMultipleFiles: Bool) {
         let openDialog = NSOpenPanel()
-        if (openDialog.runModal() == NSModalResponseOK) {
+        if (openDialog.runModal() == NSApplication.ModalResponse.OK) {
             let fileName: String = (openDialog.url?.path)!
             resultListener.chooseFilename(fileName) // Use chooseFilenames for multiple files
         } else {
@@ -94,7 +94,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
         {
             if (navigationAction.navigationType == WKNavigationType.linkActivated) {
                 let url = navigationAction.request.url!
-                NSWorkspace.shared().open(url)
+                NSWorkspace.shared.open(url)
             }
             decisionHandler(.cancel)
         }

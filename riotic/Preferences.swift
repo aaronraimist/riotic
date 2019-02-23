@@ -19,13 +19,13 @@ class Preferences: NSViewController {
     }
 
     @IBAction func cancelButtonClick(_ sender: AnyObject) {
-        dismissViewController(self)
+        dismiss(self)
     }
     
     @IBAction func saveButtonClick(_ sender: AnyObject) {
         prefs.store(key: "riotClientUrl", value: riotClientUrl.stringValue)
         prefs.save()
-        dismissViewController(self)
+        dismiss(self)
     }
     
     func setUIvalues() {
