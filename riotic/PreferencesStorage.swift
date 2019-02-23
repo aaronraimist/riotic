@@ -44,7 +44,7 @@ class PreferencesStorage {
     }
     
     func preferences() -> [String : Any]? {
-        return myDefaults!.dictionary(forKey: "preferences")!
+        return myDefaults!.dictionary(forKey: "preferences")
     }
     
     func hasPreferences() -> Bool {
