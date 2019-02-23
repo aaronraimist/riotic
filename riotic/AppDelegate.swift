@@ -11,14 +11,23 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-		
-    }
+
+	}
+
+	func applicationWillFinishLaunching(_ notification: Notification) {
+		if UserDefaults.standard.bool(forKey: "hasLaunchedBefore") {
+			print("App has launched before")
+		} else {
+			UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+
+			UserDefaults.standard.set(true, forKey: "WebContinuousSpellCheckingEnabled")
+			UserDefaults.standard.set(true, forKey: "WebKitDeveloperExtras")
+		}
+	}
 
     func applicationWillTerminate(_ aNotification: Notification) {
 
     }
 
 }
-

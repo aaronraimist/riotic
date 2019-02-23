@@ -331,7 +331,7 @@
                 </view>
                 <userDefaultsController representsSharedInstance="YES" id="3eQ-Rh-Pbb"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="76" y="-157"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -353,7 +353,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="270"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -366,7 +366,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="919"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="2UL-yO-d8a">
@@ -374,7 +374,7 @@
                 <viewController title="Preferences" id="cCc-1n-DEx" customClass="Preferences" customModule="riotic" customModuleProvider="target" sceneMemberID="viewController"/>
                 <customObject id="lvm-Xx-DDQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="44"/>
+            <point key="canvasLocation" x="797" y="-157"/>
         </scene>
     </scenes>
 </document>

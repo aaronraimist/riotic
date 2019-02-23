@@ -4,9 +4,5 @@
 <dict>
 	<key>riotClientUrl</key>
 	<string>https://riot.im/app/</string>
-	<key>WebKitDeveloperExtras</key>
-	<true/>
-	<key>WebContinuousSpellCheckingEnabled</key>
-	<true/>
 </dict>
 </plist>
