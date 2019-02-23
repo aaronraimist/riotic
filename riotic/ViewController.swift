@@ -39,15 +39,20 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
     
     private func loadClient() {
         let urlRawSetting = settings?.get(key: "riotClientUrl")
-        let url = URL(string: urlRawSetting!)
-        
-        if (url != nil) {
-            let request = NSURLRequest(url:url as! URL)
-            print("Showing web view2 from url \(url)")
-            webView.load(request as URLRequest)
-        } else {
-            print("INVALID URL! - \(urlRawSetting)")
-        }
+
+        guard let url = URL(string: urlRawSetting!) else {
+			print("NIL URL! - \(String(describing: urlRawSetting))")
+			return
+		}
+
+		guard url.isValidURL else {
+			print("INVALID URL! - \(String(describing: urlRawSetting))")
+			return
+		}
+
+		let request = NSURLRequest(url:url)
+		print("Showing web view2 from url \(String(describing: url))")
+		webView.load(request as URLRequest)
     }
     
     private func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: ((WKNavigationActionPolicy) -> Void)) {
@@ -103,7 +108,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         decisionHandler(.allow)
     }
-    
+
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.

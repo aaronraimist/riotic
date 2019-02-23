@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DBFE9802220FFF700EFB1F3 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFE97F2220FFF700EFB1F3 /* URL.swift */; };
 		D23F5BC21DB3C2E5009CAD61 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */; };
 		D23F5BC41DB3CD92009CAD61 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = D23F5BC31DB3CD92009CAD61 /* Preferences.plist */; };
 		D23F5BC81DB6639D009CAD61 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3DBFE97D2220EBFA00EFB1F3 /* riotic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = riotic.entitlements; sourceTree = "<group>"; };
+		3DBFE97F2220FFF700EFB1F3 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		D23F5BC31DB3CD92009CAD61 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 		D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesStorage.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DBFE97E2220FFB500EFB1F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DBFE97F2220FFF700EFB1F3 /* URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D2C950AE1DAEE8BE0009B958 = {
 			isa = PBXGroup;
 			children = (
@@ -65,16 +75,17 @@
 		D2C950B91DAEE8BE0009B958 /* riotic */ = {
 			isa = PBXGroup;
 			children = (
-				3DBFE97D2220EBFA00EFB1F3 /* riotic.entitlements */,
-				D23F5BC91DB686D6009CAD61 /* ViewController.swift */,
-				D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */,
 				D2C950BA1DAEE8BE0009B958 /* AppDelegate.swift */,
+				D23F5BC91DB686D6009CAD61 /* ViewController.swift */,
 				D2C950BC1DAEE8BE0009B958 /* Preferences.swift */,
 				D23F5BC71DB6639D009CAD61 /* PreferencesStorage.swift */,
-				D2C950BE1DAEE8BE0009B958 /* Assets.xcassets */,
+				3DBFE97E2220FFB500EFB1F3 /* Extensions */,
 				D2C950C01DAEE8BF0009B958 /* Main.storyboard */,
+				D23F5BC01DB3C2E5009CAD61 /* Preferences.xib */,
+				D2C950BE1DAEE8BE0009B958 /* Assets.xcassets */,
 				D2C950C31DAEE8BF0009B958 /* Info.plist */,
 				D23F5BC31DB3CD92009CAD61 /* Preferences.plist */,
+				3DBFE97D2220EBFA00EFB1F3 /* riotic.entitlements */,
 			);
 			path = riotic;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBFE9802220FFF700EFB1F3 /* URL.swift in Sources */,
 				D2C950BD1DAEE8BE0009B958 /* Preferences.swift in Sources */,
 				D2C950BB1DAEE8BE0009B958 /* AppDelegate.swift in Sources */,
 				D23F5BCA1DB686D6009CAD61 /* ViewController.swift in Sources */,
