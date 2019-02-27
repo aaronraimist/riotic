@@ -134,7 +134,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Digistrada S.L.";
+				ORGANIZATIONNAME = "Aaron Raimist";
 				TargetAttributes = {
 					D2C950B61DAEE8BE0009B958 = {
 						CreatedOnToolsVersion = 8.0;
@@ -143,6 +143,12 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
 								enabled = 1;
 							};
 						};

@@ -45,7 +45,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate, Pref
 		}
 
 		let request = NSURLRequest(url:url)
-		print("Showing web view2 from url \(String(describing: url))")
+		print("Reloading web view with URL: \(String(describing: url))")
 		webView.load(request as URLRequest)
     }
     
