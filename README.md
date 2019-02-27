@@ -28,3 +28,5 @@ riotic is also sandboxed so it has very limited access to your system.
 
 ![screen shot 2019-02-26 at 7 10 33 pm](https://user-images.githubusercontent.com/5855073/53458083-4c867c00-39fa-11e9-9e35-e51307b9ace9.png)
 ![screen shot 2019-02-26 at 7 10 26 pm](https://user-images.githubusercontent.com/5855073/53458084-4c867c00-39fa-11e9-9d47-6f7deeac97f7.png)
+
+oh yeah and spellcheck works :)
