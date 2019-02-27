@@ -1,7 +1,7 @@
 # riotic
 [![Stable Version](https://img.shields.io/badge/download-stable-green.svg)](https://github.com/aaronraimist/riotic/releases/latest)
 
-[Riot](https://github.com/vector-im/riot-web) packaged as a desktop app using WKWebView
+[Riot](https://github.com/vector-im/riot-web) packaged as a macOS desktop app using WKWebView
 
 This is a small update to the [original riotic created by Joakim Ahlen](https://bitbucket.org/riotic/riotic).
 
